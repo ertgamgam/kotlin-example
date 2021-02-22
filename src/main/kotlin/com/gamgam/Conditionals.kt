@@ -10,10 +10,20 @@ fun main() {
         "Not 3"
     }
 
-    when (result) {
-        3 -> println("Number is $result")
-        is String -> println("Result is not a integer")
+    val whenResult = when (result) {
+        3 -> {
+            println("Number is $result")
+            12
+        }
+        is String -> {
+            println("Result is not a integer")
+            println("second line")
+            10
+        }
+        else -> -1
     }
+
+    println(whenResult)
 }
 
 
