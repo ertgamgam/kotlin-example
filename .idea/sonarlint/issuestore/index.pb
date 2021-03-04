@@ -11,3 +11,5 @@ Z
 *src/main/kotlin/com/gamgam/Conditionals.kt,a/e/ae154bd088a1fe776cf0a0d83bf6ffed4d948623
 W
 'src/main/kotlin/com/gamgam/Functions.kt,b/3/b3b2dc140b67142be8524c796612bfd56d126c1e
+]
+-src/main/kotlin/com/gamgam/classes/Classes.kt,6/7/675b82f272bc9f0d51df84a40be94a287a666f1c

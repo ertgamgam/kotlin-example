@@ -36,8 +36,12 @@ class People(var id: Int, var name: String, val yearOfBirth: Int) { // this two 
             field = value
         }
 
-}
+     fun peopleAsString() {
+        println("People as string method worked")
+        println("Age = $id, Name = $name")
+    }
 
+}
 
 fun main() {
     val customer = Customer()
@@ -52,5 +56,6 @@ fun main() {
     println(people.age)
     people.socialSecurityNumber = "SN234324"
     println(people.socialSecurityNumber)
+    people.peopleAsString()
 
 }
