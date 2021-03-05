@@ -18,5 +18,5 @@ class Employee : StoredEntity() {
 fun main() {
     val employee = Employee()
     employee.store()
-    employee.status()4
+    employee.status()
 }
