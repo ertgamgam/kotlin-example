@@ -33,6 +33,8 @@ class Customer {
 
 }
 
+//===============
+
 interface Interface1 {
     fun funA() {
         println("Fun a from interface1")
@@ -56,7 +58,56 @@ class Class1And2 : Interface1, Interface2 {
     }
 }
 
+//===============
+
+interface Repository<T> {
+    fun getById(id: Int): T
+    fun getAll(): List<T>
+}
+
+class GenericRepository<T> : Repository<T> {
+    override fun getById(id: Int): T {
+        TODO("Not yet implemented")
+    }
+
+    override fun getAll(): List<T> {
+        TODO("Not yet implemented")
+    }
+}
+
+class CustomerGenericRepository : Repository<Customer> {
+    override fun getById(id: Int): Customer {
+        TODO("Not yet implemented")
+    }
+
+    override fun getAll(): List<Customer> {
+        TODO("Not yet implemented")
+    }
+
+}
+
+//====
+
+interface Repo {
+    fun <T> getById(id: Int): T
+    fun <T> getAll(id: Int): List<T>
+}
+
+class MyRepo : Repo {
+    override fun <T> getById(id: Int): T {
+        TODO("Not yet implemented")
+    }
+
+    override fun <T> getAll(id: Int): List<T> {
+        TODO("Not yet implemented")
+    }
+
+}
+
 fun main() {
-    var class1And2 = Class1And2()
+    val class1And2 = Class1And2()
     class1And2.funA()
+
+
+    println("\n\n")
 }
